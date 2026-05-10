@@ -14,7 +14,7 @@ def fuzzy_difference(A, B):
     return np.minimum(A, 1 - B)
 # Function to create fuzzy relation by Cartesian product of two fuzzy sets
 def cartesian_product(A, B):
-    return np.outer(A, B)+
+    return np.outer(A, B)
 # Function to perform Max-Min composition on two fuzzy relations
 def max_min_composition(R, S):
     result = np.zeros((R.shape[0], S.shape[1]))
